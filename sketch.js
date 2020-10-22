@@ -18,7 +18,8 @@ function draw() {
   rotate(scAngle);
   stroke(0,0,255);
   strokeWeight(7);
-  line(0,0,110,50);  
+  line(0,0,110,50);
+  arc(110,50,10,5)  
 
   pop(); 
 
@@ -35,6 +36,14 @@ function draw() {
   strokeWeight(7);
   line(0,0,50,50);  
   pop();    
+
+  strokeWeight(10); noFill(); 
+  stroke(0,0,255 ); 
+  arc(0,0,300,300,0,scAngle); 
+  stroke(0,255,0);
+  arc(0,0,280,280,0,mnAngle); 
+  stroke(255,0,0); 
+  arc(0,0,260,260,0,hrAngle);
 
   drawSprites();
 }
